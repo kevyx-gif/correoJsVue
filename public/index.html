@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo</title>
+</head>
+<body>
+    <header>
+        <nav style="display: flex; flex-direction: row; align-items: center; justify-content: space-around;">
+            <div class="logotipo"></div>
+            <div class="titulo">C@rreo</div>
+            <div class="nombre">Kevin Garcia Gonzalez</div>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <section class="cabeceraCorreo" style="display: flex; flex-direction: column;">
+                <input type="email" id="campoDe">
+                <input type="email" id="campoPara">
+                <input type="text" id="campoAsunto">
+            </section>
+            <section class="cuerpoCorreo" style="display: flex; flex-direction: row;">
+                <div class="escrito">
+                    <textarea id="correoEscrito" type="text" cols="100" rows="10" style=" overflow-y: scroll;" spellcheck="true" wrap="hard"></textarea>
+                </div>
+                <div class="caracteristicas" style="display: flex; flex-direction: column;">
+                    <div class="cuadro" style="display: flex; flex-direction: row;">
+                        <input type="checkbox">
+                        <h4>Negritas</h4>
+                    </div>
+                    <div class="cuadro" style="display: flex; flex-direction: row;">
+                        <input type="checkbox">
+                        <h4>Italica</h4>
+                    </div>
+                    <div class="cuadro" style="display: flex; flex-direction: row;">
+                        <input type="checkbox">
+                        <h4>Mayusculas</h4>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <input id="Boton_enviar" value="Enviar" type="button">
+    </footer>
+</body>
+</html>
